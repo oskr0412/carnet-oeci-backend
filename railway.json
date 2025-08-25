@@ -1,0 +1,9 @@
+{
+    "build": {
+        "builder": "PHP"
+    },
+    "deploy": {
+        "startCommand": "php -S 0.0.0.0:$PORT -t public",
+        "healthcheckPath": "/test_connection.php"
+    }
+}

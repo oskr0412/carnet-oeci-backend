@@ -1,0 +1,16 @@
+{
+    "name": "oeci/carnet-digital",
+    "description": "Sistema de carnet digital O.E.C.I.",
+    "require": {
+        "php": "^8.0",
+        "ext-pdo": "*",
+        "ext-json": "*",
+        "ext-gd": "*",
+        "ext-mysqli": "*"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php -r \"if (!file_exists('public/uploads/fotos')) mkdir('public/uploads/fotos', 0777, true);\""
+        ]
+    }
+}
